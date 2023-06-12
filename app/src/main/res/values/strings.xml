@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">sis145</string>
+    <string name="title_activity_acerca">acerca</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+    </string>
+    <string name="title_activity_configuracion">configuracion</string>
+
+        <string name="acerca_de_texto"> <b>ACERCA DE:</b> \n\n<b>Centro de Notificaciones</b>\n\nVersión: 1.0.0\nDesarrollador: Nombre de la empresa\nSitio web: www.ejemplo.com\n\n<b>Descripción:</b>\nEl Centro de Notificaciones es una aplicación diseñada para ayudarte a administrar y organizar tus notificaciones de manera eficiente. Con esta aplicación, podrás tener un control total sobre las notificaciones que recibes en tu dispositivo Android, personalizando su apariencia, estableciendo prioridades y gestionándolas de acuerdo con tus preferencias.\n\n<b>Política de privacidad:</b>\nPara obtener información detallada sobre cómo se manejan tus datos personales y cómo se utilizan en el Centro de Notificaciones, consulta nuestra política de privacidad en el siguiente enlace: [Enlace a la política de privacidad].\n\n<b>Términos de uso:</b>\nAl utilizar la aplicación Centro de Notificaciones, aceptas los términos y condiciones establecidos en nuestros términos de uso. Por favor, lee detenidamente los términos de uso en el siguiente enlace: [Enlace a los términos de uso].\n\nFecha de lanzamiento: 1 de junio de 2023</string>
+
+</resources>
