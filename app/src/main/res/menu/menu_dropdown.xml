@@ -6,7 +6,7 @@
         android:checkable="false"
         android:enabled="true"
         android:iconTint="#E60000"
-        android:title="Ajustes" />
+        android:title="Iniciar Sesion" />
     <item
         android:id="@+id/menu_item2"
         android:title="Acerca de" />

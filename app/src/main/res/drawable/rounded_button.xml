@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#21407C" /> <!-- Cambia el color como desees -->
+        <corners android:radius="35dp" /> <!-- Cambia el radio para ajustar el redondeo -->
+    </shape>
+</selector>

@@ -11,6 +11,15 @@
     </string>
     <string name="title_activity_configuracion">configuracion</string>
 
-        <string name="acerca_de_texto"> <b>ACERCA DE:</b> \n\n<b>Centro de Notificaciones</b>\n\nVersión: 1.0.0\nDesarrollador: Nombre de la empresa\nSitio web: www.ejemplo.com\n\n<b>Descripción:</b>\nEl Centro de Notificaciones es una aplicación diseñada para ayudarte a administrar y organizar tus notificaciones de manera eficiente. Con esta aplicación, podrás tener un control total sobre las notificaciones que recibes en tu dispositivo Android, personalizando su apariencia, estableciendo prioridades y gestionándolas de acuerdo con tus preferencias.\n\n<b>Política de privacidad:</b>\nPara obtener información detallada sobre cómo se manejan tus datos personales y cómo se utilizan en el Centro de Notificaciones, consulta nuestra política de privacidad en el siguiente enlace: [Enlace a la política de privacidad].\n\n<b>Términos de uso:</b>\nAl utilizar la aplicación Centro de Notificaciones, aceptas los términos y condiciones establecidos en nuestros términos de uso. Por favor, lee detenidamente los términos de uso en el siguiente enlace: [Enlace a los términos de uso].\n\nFecha de lanzamiento: 1 de junio de 2023</string>
+    <string name="acerca_de_texto"> <b>ACERCA DE:</b> \n\n<b>Centro de Notificaciones</b>\n\nVersión: 1.0.0\nDesarrollador: Nombre de la empresa\nSitio web: www.ejemplo.com\n\n<b>Descripción:</b>\nEl Centro de Notificaciones es una aplicación diseñada para ayudarte a administrar y organizar tus notificaciones de manera eficiente. Con esta aplicación, podrás tener un control total sobre las notificaciones que recibes en tu dispositivo Android, personalizando su apariencia, estableciendo prioridades y gestionándolas de acuerdo con tus preferencias.\n\n<b>Política de privacidad:</b>\nPara obtener información detallada sobre cómo se manejan tus datos personales y cómo se utilizan en el Centro de Notificaciones, consulta nuestra política de privacidad en el siguiente enlace: [Enlace a la política de privacidad].\n\n<b>Términos de uso:</b>\nAl utilizar la aplicación Centro de Notificaciones, aceptas los términos y condiciones establecidos en nuestros términos de uso. Por favor, lee detenidamente los términos de uso en el siguiente enlace: [Enlace a los términos de uso].\n\nFecha de lanzamiento: 1 de junio de 2023</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>
