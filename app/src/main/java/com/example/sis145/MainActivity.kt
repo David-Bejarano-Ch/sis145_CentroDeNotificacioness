@@ -1,6 +1,10 @@
 package com.example.sis145
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -10,51 +14,68 @@ import android.view.MenuItem
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.PopupMenu
+
 
 class MainActivity : AppCompatActivity() {
     //variable del image button declarada
     private lateinit var imageButton2: ImageButton
+    private lateinit var sharedPreferences: SharedPreferences
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        // vuelve transparente los iconos del movil (Donde sale la hora,la señal,etc,etc)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            window.apply {
-                addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-                statusBarColor = Color.WHITE
-                statusBarColor = Color.TRANSPARENT// Reemplaza con el color que desees utilizar
-            }
-        }
-        //
+                        super.onCreate(savedInstanceState)
+                setContentView(R.layout.activity_main)
+                // vuelve transparente los iconos del movil (Donde sale la hora,la señal,etc,etc)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    window.apply {
+                        addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                        statusBarColor = Color.WHITE
+                        statusBarColor = Color.TRANSPARENT// Reemplaza con el color que desees utilizar
+                    }
+                }
 
-        setContentView(R.layout.activity_main)
-
-        /*creacion de los botones*/
-
-        val btn_grupos = findViewById<Button>(R.id.btn_grupos) as Button
-        val btn_temas = findViewById<Button>(R.id.btn_temas) as Button
+                //codigo bienvenida saludo
+                sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+                val nombre = getSavedName()
+                showSaludo(nombre)
 
 
-    // botones de la pagina principal que llevan a sus propias pantallas
-        btn_grupos.setOnClickListener() {
-            val intent = Intent(this@MainActivity, grupos::class.java)
-            startActivity(intent)
-        }
-        btn_temas.setOnClickListener() {
-            val intent = Intent(this@MainActivity, temas::class.java)
-            startActivity(intent)
-        }
+                /*creacion de los botones*/
+
+                val btn_grupos = findViewById<Button>(R.id.btn_grupos) as Button
+                val btn_temas = findViewById<Button>(R.id.btn_temas) as Button
 
 
-        imageButton2 = findViewById(R.id.imageButton2)
-        imageButton2.setOnClickListener {
-            showPopupMenu()
-        }
+            // botones de la pagina principal que llevan a sus propias pantallas
+                btn_grupos.setOnClickListener() {
+                    val intent = Intent(this@MainActivity, grupos::class.java)
+                    startActivity(intent)
+                }
+                btn_temas.setOnClickListener() {
+                    val intent = Intent(this@MainActivity, temas::class.java)
+                    startActivity(intent)
+                }
+
+
+                imageButton2 = findViewById(R.id.imageButton2)
+                imageButton2.setOnClickListener {
+                    showPopupMenu()
+                }
 
     }
-
+        //Codigo aviso de bienvenida
+    private fun getSavedName(): String {
+        return sharedPreferences.getString("nombre", "") ?: ""
+    }
+    private fun showSaludo(nombre: String) {
+        val saludo = "Hola, $nombre!!"
+        Toast.makeText(this, saludo, Toast.LENGTH_SHORT).show()
+    }
     //Crea el menu desplazable
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_dropdown, menu)
@@ -66,6 +87,8 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.menu_item1 -> {
                 // Acción para la opción 1
+                val intent = Intent(this, login_basico::class.java)
+                startActivity(intent)
                 true
             }
             R.id.menu_item2 -> {

@@ -4,65 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EB111750"
     tools:context=".login_basico">
 
-        <ImageView
-            android:id="@+id/ivLogo"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp"/>
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="231dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/icono_real_removebg_preview"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvTitulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="HOLA!!!!"
-            android:textSize="24sp"
-            app:layout_constraintTop_toBottomOf="@id/ivLogo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"/>
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="ACCOUNT"
+        android:textColor="#02FAD6"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
 
     <EditText
         android:id="@+id/etNombre"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="338dp"
+        android:layout_height="60dp"
         android:layout_margin="16dp"
         android:hint="Nombre"
+        android:textColor="#08D3B6"
+        android:textColorHint="#25AAAF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="216dp" />
-
-    <EditText
-        android:id="@+id/etApellido"
-        android:layout_width="375dp"
-        android:layout_height="54dp"
-        android:layout_margin="16dp"
-        android:hint="Apellido"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="299dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
 
     <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="registrar"
+        android:id="@+id/button_registrar"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#E400ACC1"
+        android:text="Registrar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.6"
-        tools:layout_editor_absoluteY="378dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
