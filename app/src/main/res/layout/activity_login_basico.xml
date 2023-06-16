@@ -39,7 +39,7 @@
         android:layout_width="338dp"
         android:layout_height="60dp"
         android:layout_margin="16dp"
-        android:hint="Nombre"
+        android:hint="Nombre_Usuario"
         android:textColor="#08D3B6"
         android:textColorHint="#25AAAF"
         app:layout_constraintBottom_toBottomOf="parent"
