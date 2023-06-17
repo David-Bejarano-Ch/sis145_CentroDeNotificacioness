@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Sis145"
         tools:targetApi="31">
         <activity
+            android:name=".Ayuda"
+            android:exported="false" />
+        <activity
+            android:name=".calendario"
+            android:exported="false" />
+        <activity
             android:name=".login_basico"
             android:exported="false" />
         <activity
@@ -37,9 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".temas"
-            android:exported="false" />
+
         <activity
             android:name=".grupos"
             android:exported="false" />
